@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Home Work", "Home Work", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AquariumFish", "AquariumFish\AquariumFish.csproj", "{84FB1D2B-F389-4D9D-9424-8C9697C1AC12}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zoo", "Zoo\Zoo.csproj", "{876ECC11-74C7-4705-B3F4-C65AB7D7A83F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{84FB1D2B-F389-4D9D-9424-8C9697C1AC12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84FB1D2B-F389-4D9D-9424-8C9697C1AC12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84FB1D2B-F389-4D9D-9424-8C9697C1AC12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{876ECC11-74C7-4705-B3F4-C65AB7D7A83F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{876ECC11-74C7-4705-B3F4-C65AB7D7A83F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{876ECC11-74C7-4705-B3F4-C65AB7D7A83F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{876ECC11-74C7-4705-B3F4-C65AB7D7A83F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +36,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{C04B0BC9-95F0-4B2D-B029-F804AEBD6563} = {D9DA2967-C3E6-49BF-95FC-44F6462C6BC4}
 		{84FB1D2B-F389-4D9D-9424-8C9697C1AC12} = {D9DA2967-C3E6-49BF-95FC-44F6462C6BC4}
+		{876ECC11-74C7-4705-B3F4-C65AB7D7A83F} = {D9DA2967-C3E6-49BF-95FC-44F6462C6BC4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9E266672-D7A5-4F17-B7EF-3588FC4D602D}
