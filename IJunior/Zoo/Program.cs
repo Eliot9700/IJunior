@@ -18,7 +18,7 @@ namespace Zoo
          *      а животное, передается в нужный метод. 
          *      У вас список отвечает за всех животных. 
          *      Может быть имя вольера. 
-         *  6. if (gender == 1) { return "Male"; } else { return "Famale"; - сделайте проще. 
+         * + 6. if (gender == 1) { return "Male"; } else { return "Famale"; - сделайте проще. 
          *      Массив строк и из массива выбирать значение.
          */
         static void Main(string[] args)
