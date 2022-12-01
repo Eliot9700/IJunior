@@ -1,0 +1,8 @@
+C:\Users\Admin\source\repos\Eliot9700\IJunior\IJunior\Zoo\bin\Debug\Zoo.exe.config
+C:\Users\Admin\source\repos\Eliot9700\IJunior\IJunior\Zoo\bin\Debug\Zoo.exe
+C:\Users\Admin\source\repos\Eliot9700\IJunior\IJunior\Zoo\bin\Debug\Zoo.pdb
+C:\Users\Admin\source\repos\Eliot9700\IJunior\IJunior\Zoo\obj\Debug\Zoo.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\Eliot9700\IJunior\IJunior\Zoo\obj\Debug\Zoo.csproj.SuggestedBindingRedirects.cache
+C:\Users\Admin\source\repos\Eliot9700\IJunior\IJunior\Zoo\obj\Debug\Zoo.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\Eliot9700\IJunior\IJunior\Zoo\obj\Debug\Zoo.exe
+C:\Users\Admin\source\repos\Eliot9700\IJunior\IJunior\Zoo\obj\Debug\Zoo.pdb

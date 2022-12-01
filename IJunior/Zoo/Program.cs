@@ -1,50 +1,80 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ZOO
+namespace Zoo
 {
     internal class Program
     {
+        /*  Доработать. 
+         * + 1. В class Program оставляйте одну функцию Main (можно общую функцию по типу ReadInt()), 
+         *      а для всего остального функционала выделяйте дополнительный класс. Вам нужен зоопарк. 
+         * + 2. EnterAviary(aviaries); - метод не будет подходить, так как будет зоопарк, а методы указывают что делает класс. 
+         * + 3. CreateAviaty() - Методы, которые должны вызывать только внутри класса, должны быть приватными (ведь не планируется, 
+         *      что кто то извне сможет их вызвать, а значит и изменить класс через них). 
+         * + 4. CreateAviaty() - не повторяйте имя класса внутри имени его методов/полей. 
+         * + 5. private Animal _animal; 
+         *      private int _minCountAnimal = 5; 
+         *      private int _maxCountAnimal = 20; - не нужны поля, количество просто переменные в нужном методе, 
+         *      а животное, передается в нужный метод. 
+         *      У вас список отвечает за всех животных. 
+         *      Может быть имя вольера. 
+         *  6. if (gender == 1) { return "Male"; } else { return "Famale"; - сделайте проще. 
+         *      Массив строк и из массива выбирать значение.
+         */
         static void Main(string[] args)
         {
             bool isWork = true;
 
-            List<Aviary> aviaries = new List<Aviary>();
-            aviaries.Add(new Aviary(new Animal("Лев", "Рычит")));
-            aviaries.Add(new Aviary(new Animal("Слон", "Трубит")));
-            aviaries.Add(new Aviary(new Animal("Тигр", "Рычит")));
-            aviaries.Add(new Aviary(new Animal("Жираф", "Хмыкает")));
-            aviaries.Add(new Aviary(new Animal("Обезьяна", "Хрюкает, Пыхтит, Лает, Хныкает")));
+            Zoo zoo = new Zoo();
 
             while (isWork)
             {
                 Console.Clear();
 
-                ShowListAviaries(aviaries);
-                EnterAviary(aviaries);
+                zoo.ShowAllAviaries();
+                zoo.SelectAviary();
 
                 Console.ReadKey();
             }
         }
+    }
 
-        static void ShowListAviaries(List<Aviary> aviaries)
+    class Zoo
+    {
+        private List<Aviary> _aviaries = new List<Aviary>();
+
+        public Zoo()
         {
-            Console.WriteLine("Вы пришли в зоопарк и видите {0} вальеров", aviaries.Count);
+            CreateAviaries();
+        }
 
-            foreach (var aviarie in aviaries)
+        private void CreateAviaries()
+        {
+            _aviaries.Add(new Aviary(new Animal("Лев", "Рычит")));
+            _aviaries.Add(new Aviary(new Animal("Слон", "Трубит")));
+            _aviaries.Add(new Aviary(new Animal("Тигр", "Рычит")));
+            _aviaries.Add(new Aviary(new Animal("Жираф", "Хмыкает")));
+            _aviaries.Add(new Aviary(new Animal("Обезьяна", "Хрюкает, Пыхтит, Лает, Хныкает")));
+        }
+
+        public void ShowAllAviaries()
+        {
+            Console.WriteLine("Вы пришли в зоопарк и видите {0} вольеров", _aviaries.Count);
+
+            foreach (var aviarie in _aviaries)
             {
-                Console.WriteLine("№" + aviarie.ID);
+                Console.WriteLine("Вольер #: " + aviarie.ID);
             }
         }
 
-        static void EnterAviary(List<Aviary> aviaries)
+        public void SelectAviary()
         {
             Console.Write("Выберите номер вальера чтоб подойти к нему: ");
             bool isConverted = int.TryParse(Console.ReadLine(), out int numberAviary);
 
-            if (isConverted && numberAviary <= aviaries.Count)
+            if (isConverted && numberAviary <= _aviaries.Count)
             {
-                foreach (var aviarie in aviaries)
+                foreach (var aviarie in _aviaries)
                 {
                     if (aviarie.ID == numberAviary)
                     {
@@ -65,35 +95,34 @@ namespace ZOO
         private static Random _random = new Random();
         private static int _ids;
         private List<Animal> _animals = new List<Animal>();
-        private Animal _animal;
-        private int _minCountAnimal = 5;
-        private int _maxCountAnimal = 20;
+        private string _aviaryName;
 
         public int ID { get; set; }
 
         public Aviary(Animal animal)
         {
+            _aviaryName = animal.Name;
             ID = ++_ids;
-            _animal = animal;
-            CreateAviaty();
+            Create(animal);
         }
 
-        public void CreateAviaty()
+        private void Create(Animal animal)
         {
+            int _minCountAnimal = 5;
+            int _maxCountAnimal = 20;
             int randomCountAnimal = _random.Next(_minCountAnimal, _maxCountAnimal);
 
             for (int i = 0; i < randomCountAnimal; i++)
             {
-                Animal tempAnimal = new Animal(_animal.Name, _animal.Sound);
+                Animal tempAnimal = new Animal(animal.Name, animal.Sound);
                 _animals.Add(tempAnimal);
             }
         }
 
         public void ShowAllInfo()
         {
-            Console.WriteLine("Вы подошли к вольеру!");
-            Console.WriteLine($"В вольере: {_animal.Name} в количестве {_animals.Count} штук!");
-            Console.WriteLine($"Он {_animal.Sound}");
+            Console.WriteLine($"Вы подошли к вольеру\nВ нём находится {_aviaryName} в количестве {_animals.Count} штук!");
+            Console.WriteLine($"Он {_animals[0].Sound}");
 
             foreach (var animal in _animals)
             {
@@ -126,16 +155,9 @@ namespace ZOO
 
         private string EstablishGender()
         {
-            int gender = random.Next(0, 2);
+            string[] gender = { "Male", "Famale" };
 
-            if (gender == 1)
-            {
-                return "Male";
-            }
-            else
-            {
-                return "Famale";
-            }
+            return gender[random.Next(0, 2)];
         }
     }
 }
