@@ -8,8 +8,8 @@ namespace War
         static void Main(string[] args)
         {
             Console.CursorVisible = false;
-            Console.SetWindowSize(120, 45);
-            Console.SetBufferSize(120, 45);
+            Console.SetWindowSize(107, 45);
+            Console.SetBufferSize(107, 45);
             Console.Title = "War, war never changes!";
 
             Battlefield battlefield = new Battlefield();
