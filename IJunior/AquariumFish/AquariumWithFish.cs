@@ -5,11 +5,23 @@ namespace AquariumWithFish
 {
     internal class AquariumWithFish
     {
+        /* +  1.  StartMenuLogic - имя не отражает суть. 
+         *      Старт больше одного раза выполняться не должен. 
+         * + 2.  virtual public void ShowInfoAllFish() - модификатор доступа пишется первым. 
+         *      И зачем оно виртуальное? Это актуально только при наследовании. 
+         * + 3.  while (_isWork) { Console.Clear(); 
+         *      aquarium.ShowInfoAllFish(); 
+         *      PrintMenuItems(); 
+         *      StartMenuLogic(); 
+         *      aquarium.SkipOneMonthFishLife(); } - в конструкторе не должно быть никакой логики, кроме начальной инициализации объекта. 
+         * + 4. private bool IsAlive = true; - приватное поле названо не по нотации.
+         */
 
         static void Main(string[] args)
         {
             Aquarium aquarium = new Aquarium(10);
             MenuAquarium menuAquarium = new MenuAquarium(aquarium);
+            menuAquarium.Run();
         }
     }
 
@@ -24,16 +36,6 @@ namespace AquariumWithFish
         public MenuAquarium(Aquarium aquarium)
         {
             _aquarium = aquarium;
-
-            while (_isWork)
-            {
-                Console.Clear();
-
-                aquarium.ShowInfoAllFish();
-                PrintMenuItems();
-                RunMenuLogic();
-                aquarium.SkipOneMonthFishLife();
-            }
         }
 
         private void PrintMenuItems()
@@ -41,6 +43,19 @@ namespace AquariumWithFish
             Console.WriteLine($"[{CommandAddFish}]\t- Добавить рыбку в аквариум");
             Console.WriteLine($"[{CommandRemoveFish}]\t- Убрать рыбку из аквариума");
             Console.WriteLine($"[{CommandExit}]\t\t- Выйти из приложения");
+        }
+
+        public void Run()
+        {
+            while (_isWork)
+            {
+                Console.Clear();
+
+                _aquarium.ShowInfoAllFish();
+                PrintMenuItems();
+                RunMenuLogic();
+                _aquarium.SkipOneMonthFishLife();
+            }
         }
 
         private void RunMenuLogic()
@@ -167,7 +182,7 @@ namespace AquariumWithFish
             return _fish.Count;
         }
 
-        virtual public void ShowInfoAllFish()
+        public void ShowInfoAllFish()
         {
             int CursorPisitionLeft = 70;
 
@@ -195,7 +210,7 @@ namespace AquariumWithFish
     class Fish
     {
         private static int _ids;
-        private bool IsAlive = true;
+        private bool _isAlive = true;
         private int _countMonthOneYear = 12;
 
         public string Name { get; private set; }
@@ -209,7 +224,7 @@ namespace AquariumWithFish
         public Fish(string name, int maxAge)
         {
             Number = ++_ids;
-            IsAlive = true;
+            _isAlive = true;
             Age = 0;
             Name = name;
             MaxAgeInMonth = maxAge * _countMonthOneYear;
@@ -217,7 +232,7 @@ namespace AquariumWithFish
 
         public void ShowInfo()
         {
-            if (IsAlive)
+            if (_isAlive)
             {
                 Console.Write("#{0}\t|Age: {1}/{2}.мес\t| Name: {3} ", Number, Age, MaxAgeInMonth, Name);
             }
@@ -233,7 +248,7 @@ namespace AquariumWithFish
 
             if (Age > MaxAgeInMonth)
             {
-                IsAlive = false;
+                _isAlive = false;
             }
         }
     }
