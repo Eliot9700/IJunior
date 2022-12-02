@@ -5,18 +5,6 @@ namespace AquariumWithFish
 {
     internal class AquariumWithFish
     {
-        /* +  1.  StartMenuLogic - имя не отражает суть. 
-         *      Старт больше одного раза выполняться не должен. 
-         * + 2.  virtual public void ShowInfoAllFish() - модификатор доступа пишется первым. 
-         *      И зачем оно виртуальное? Это актуально только при наследовании. 
-         * + 3.  while (_isWork) { Console.Clear(); 
-         *      aquarium.ShowInfoAllFish(); 
-         *      PrintMenuItems(); 
-         *      StartMenuLogic(); 
-         *      aquarium.SkipOneMonthFishLife(); } - в конструкторе не должно быть никакой логики, кроме начальной инициализации объекта. 
-         * + 4. private bool IsAlive = true; - приватное поле названо не по нотации.
-         */
-
         static void Main(string[] args)
         {
             Aquarium aquarium = new Aquarium(10);
