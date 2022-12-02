@@ -25,10 +25,10 @@ namespace War
 
         public Battlefield()
         {
-            int _leftIndentFirstCountry = 0;
-            int _leftIndentSecondCountry = 55;
-            _firstPlatoon = new Platoon(_leftIndentFirstCountry);
-            _secondPlatoon = new Platoon(_leftIndentSecondCountry);
+            int leftIndentFirstCountry = 0;
+            int leftIndentSecondCountry = 55;
+            _firstPlatoon = new Platoon(leftIndentFirstCountry);
+            _secondPlatoon = new Platoon(leftIndentSecondCountry);
         }
 
         public void StartWar()
@@ -111,14 +111,14 @@ namespace War
 
         public Platoon(int leftIndent)
         {
-            int _minCountWarriors = 25;
-            int _maxCountWarriors = 40;
-            int _countWarriors;
+            int minCountWarriors = 25;
+            int maxCountWarriors = 40;
+            int countWarriors;
             _idWarrior = 0;
             _leftIndent = leftIndent;
-            _countWarriors = _random.Next(_minCountWarriors, _maxCountWarriors);
+            countWarriors = _random.Next(minCountWarriors, maxCountWarriors);
 
-            for (int i = 0; i < _countWarriors; i++)
+            for (int i = 0; i < countWarriors; i++)
             {
                 _warriors.Add(new Warrior(++_idWarrior));
             }

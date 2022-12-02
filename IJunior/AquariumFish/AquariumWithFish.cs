@@ -31,7 +31,7 @@ namespace AquariumWithFish
 
                 aquarium.ShowInfoAllFish();
                 PrintMenuItems();
-                StartMenuLogic();
+                RunMenuLogic();
                 aquarium.SkipOneMonthFishLife();
             }
         }
@@ -43,7 +43,7 @@ namespace AquariumWithFish
             Console.WriteLine($"[{CommandExit}]\t\t- Выйти из приложения");
         }
 
-        private void StartMenuLogic()
+        private void RunMenuLogic()
         {
             Console.Write("Выберите пункт меню: ");
             string userInputMeniItem = Console.ReadLine();
