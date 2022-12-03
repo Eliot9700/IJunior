@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace AquariumWithFish
+namespace AquariumProgram
 {
-    internal class AquariumWithFish
+    internal class AquariumProgram
     {
         static void Main(string[] args)
         {
-            Aquarium aquarium = new Aquarium(10);
+            int countFishInAquarium = 10;
+            Aquarium aquarium = new Aquarium(countFishInAquarium);
             MenuAquarium menuAquarium = new MenuAquarium(aquarium);
             menuAquarium.Run();
         }
@@ -19,7 +20,7 @@ namespace AquariumWithFish
         private const string CommandRemoveFish = "RemoveFish";
         private const string CommandExit = "Exit";
         private Aquarium _aquarium;
-        private bool _isWork = true;
+        private bool _isWork;
 
         public MenuAquarium(Aquarium aquarium)
         {
@@ -35,6 +36,8 @@ namespace AquariumWithFish
 
         public void Run()
         {
+            _isWork = true;
+
             while (_isWork)
             {
                 Console.Clear();
@@ -190,7 +193,7 @@ namespace AquariumWithFish
         {
             foreach (var fish in _fish)
             {
-                fish.MissingMonth();
+                fish.SkipMonth();
             }
         }
     }
@@ -230,7 +233,7 @@ namespace AquariumWithFish
             }
         }
 
-        public void MissingMonth()
+        public void SkipMonth()
         {
             Age++;
 

@@ -6,3 +6,11 @@ C:\Users\Admin\Desktop\C# Lessons and Practice\IJunior\AquariumFish\obj\Debug\Aq
 C:\Users\Admin\Desktop\C# Lessons and Practice\IJunior\AquariumFish\obj\Debug\AquariumFish.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Desktop\C# Lessons and Practice\IJunior\AquariumFish\obj\Debug\AquariumFish.exe
 C:\Users\Admin\Desktop\C# Lessons and Practice\IJunior\AquariumFish\obj\Debug\AquariumFish.pdb
+C:\Users\Admin\source\repos\Eliot9700\IJunior\IJunior\AquariumFish\bin\Debug\AquariumFish.exe.config
+C:\Users\Admin\source\repos\Eliot9700\IJunior\IJunior\AquariumFish\bin\Debug\AquariumFish.exe
+C:\Users\Admin\source\repos\Eliot9700\IJunior\IJunior\AquariumFish\bin\Debug\AquariumFish.pdb
+C:\Users\Admin\source\repos\Eliot9700\IJunior\IJunior\AquariumFish\obj\Debug\AquariumFish.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\Eliot9700\IJunior\IJunior\AquariumFish\obj\Debug\AquariumFish.csproj.SuggestedBindingRedirects.cache
+C:\Users\Admin\source\repos\Eliot9700\IJunior\IJunior\AquariumFish\obj\Debug\AquariumFish.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\Eliot9700\IJunior\IJunior\AquariumFish\obj\Debug\AquariumFish.exe
+C:\Users\Admin\source\repos\Eliot9700\IJunior\IJunior\AquariumFish\obj\Debug\AquariumFish.pdb
