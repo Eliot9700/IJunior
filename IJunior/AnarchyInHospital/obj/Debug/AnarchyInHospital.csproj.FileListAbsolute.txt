@@ -1,0 +1,8 @@
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\AnarchyInHospital\bin\Debug\AnarchyInHospital.exe.config
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\AnarchyInHospital\bin\Debug\AnarchyInHospital.exe
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\AnarchyInHospital\bin\Debug\AnarchyInHospital.pdb
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\AnarchyInHospital\obj\Debug\AnarchyInHospital.csproj.AssemblyReference.cache
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\AnarchyInHospital\obj\Debug\AnarchyInHospital.csproj.SuggestedBindingRedirects.cache
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\AnarchyInHospital\obj\Debug\AnarchyInHospital.csproj.CoreCompileInputs.cache
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\AnarchyInHospital\obj\Debug\AnarchyInHospital.exe
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\AnarchyInHospital\obj\Debug\AnarchyInHospital.pdb

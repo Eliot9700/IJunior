@@ -1,0 +1,8 @@
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\ListOffenders\bin\Debug\ListOffenders.exe.config
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\ListOffenders\bin\Debug\ListOffenders.exe
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\ListOffenders\bin\Debug\ListOffenders.pdb
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\ListOffenders\obj\Debug\ListOffenders.csproj.AssemblyReference.cache
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\ListOffenders\obj\Debug\ListOffenders.csproj.SuggestedBindingRedirects.cache
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\ListOffenders\obj\Debug\ListOffenders.csproj.CoreCompileInputs.cache
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\ListOffenders\obj\Debug\ListOffenders.exe
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\ListOffenders\obj\Debug\ListOffenders.pdb

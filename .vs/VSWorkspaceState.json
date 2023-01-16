@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\IJunior",
+    "\\IJunior\\Autoservice"
   ],
-  "SelectedNode": "\\C:\\Users\\Admin\\Source\\Repos\\Eliot9700\\IJunior",
+  "SelectedNode": "\\IJunior\\Autoservice\\Autoservice.csproj",
   "PreviewInSolutionExplorer": false
 }

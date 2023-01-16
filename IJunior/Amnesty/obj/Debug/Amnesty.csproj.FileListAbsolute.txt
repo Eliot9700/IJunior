@@ -1,0 +1,8 @@
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\Amnesty\bin\Debug\Amnesty.exe.config
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\Amnesty\bin\Debug\Amnesty.exe
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\Amnesty\bin\Debug\Amnesty.pdb
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\Amnesty\obj\Debug\Amnesty.csproj.AssemblyReference.cache
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\Amnesty\obj\Debug\Amnesty.csproj.SuggestedBindingRedirects.cache
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\Amnesty\obj\Debug\Amnesty.csproj.CoreCompileInputs.cache
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\Amnesty\obj\Debug\Amnesty.exe
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\Amnesty\obj\Debug\Amnesty.pdb
