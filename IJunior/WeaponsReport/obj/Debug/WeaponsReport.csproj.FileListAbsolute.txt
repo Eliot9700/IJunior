@@ -1,0 +1,8 @@
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\WeaponsReport\bin\Debug\WeaponsReport.exe.config
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\WeaponsReport\bin\Debug\WeaponsReport.exe
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\WeaponsReport\bin\Debug\WeaponsReport.pdb
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\WeaponsReport\obj\Debug\WeaponsReport.csproj.AssemblyReference.cache
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\WeaponsReport\obj\Debug\WeaponsReport.csproj.SuggestedBindingRedirects.cache
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\WeaponsReport\obj\Debug\WeaponsReport.csproj.CoreCompileInputs.cache
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\WeaponsReport\obj\Debug\WeaponsReport.exe
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\WeaponsReport\obj\Debug\WeaponsReport.pdb
