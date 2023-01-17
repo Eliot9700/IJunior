@@ -6,3 +6,11 @@ C:\Users\Admin\Desktop\C# Lessons and Practice\IJunior\War\obj\Debug\War.csproj.
 C:\Users\Admin\Desktop\C# Lessons and Practice\IJunior\War\obj\Debug\War.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Desktop\C# Lessons and Practice\IJunior\War\obj\Debug\War.exe
 C:\Users\Admin\Desktop\C# Lessons and Practice\IJunior\War\obj\Debug\War.pdb
+C:\Users\fsoci\Source\Repos\Eliot9700\IJunior\IJunior\War\bin\Debug\War.exe.config
+C:\Users\fsoci\Source\Repos\Eliot9700\IJunior\IJunior\War\bin\Debug\War.exe
+C:\Users\fsoci\Source\Repos\Eliot9700\IJunior\IJunior\War\bin\Debug\War.pdb
+C:\Users\fsoci\Source\Repos\Eliot9700\IJunior\IJunior\War\obj\Debug\War.csproj.AssemblyReference.cache
+C:\Users\fsoci\Source\Repos\Eliot9700\IJunior\IJunior\War\obj\Debug\War.csproj.SuggestedBindingRedirects.cache
+C:\Users\fsoci\Source\Repos\Eliot9700\IJunior\IJunior\War\obj\Debug\War.csproj.CoreCompileInputs.cache
+C:\Users\fsoci\Source\Repos\Eliot9700\IJunior\IJunior\War\obj\Debug\War.exe
+C:\Users\fsoci\Source\Repos\Eliot9700\IJunior\IJunior\War\obj\Debug\War.pdb

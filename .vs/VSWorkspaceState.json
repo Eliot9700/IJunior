@@ -2,8 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\IJunior",
-    "\\IJunior\\Autoservice"
+    "\\IJunior\\AnarchyInHospital",
+    "\\IJunior\\Autoservice2",
+    "\\IJunior\\DefinitionOfDelinquency",
+    "\\IJunior\\TopServerPlayers"
   ],
-  "SelectedNode": "\\IJunior\\Autoservice\\Autoservice.csproj",
+  "SelectedNode": "\\IJunior\\Autoservice2\\Autoservice.cs",
   "PreviewInSolutionExplorer": false
 }

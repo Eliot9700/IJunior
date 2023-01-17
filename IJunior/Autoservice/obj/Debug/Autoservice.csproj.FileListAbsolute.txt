@@ -1,8 +1,0 @@
-C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\Autoservice\bin\Debug\Autoservice.exe.config
-C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\Autoservice\bin\Debug\Autoservice.exe
-C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\Autoservice\bin\Debug\Autoservice.pdb
-C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\Autoservice\obj\Debug\Autoservice.csproj.AssemblyReference.cache
-C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\Autoservice\obj\Debug\Autoservice.csproj.SuggestedBindingRedirects.cache
-C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\Autoservice\obj\Debug\Autoservice.csproj.CoreCompileInputs.cache
-C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\Autoservice\obj\Debug\Autoservice.exe
-C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\Autoservice\obj\Debug\Autoservice.pdb

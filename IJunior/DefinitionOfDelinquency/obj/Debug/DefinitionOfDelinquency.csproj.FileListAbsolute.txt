@@ -1,0 +1,8 @@
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\DefinitionOfDelinquency\bin\Debug\DefinitionOfDelinquency.exe.config
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\DefinitionOfDelinquency\bin\Debug\DefinitionOfDelinquency.exe
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\DefinitionOfDelinquency\bin\Debug\DefinitionOfDelinquency.pdb
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\DefinitionOfDelinquency\obj\Debug\DefinitionOfDelinquency.csproj.AssemblyReference.cache
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\DefinitionOfDelinquency\obj\Debug\DefinitionOfDelinquency.csproj.SuggestedBindingRedirects.cache
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\DefinitionOfDelinquency\obj\Debug\DefinitionOfDelinquency.csproj.CoreCompileInputs.cache
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\DefinitionOfDelinquency\obj\Debug\DefinitionOfDelinquency.exe
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\DefinitionOfDelinquency\obj\Debug\DefinitionOfDelinquency.pdb

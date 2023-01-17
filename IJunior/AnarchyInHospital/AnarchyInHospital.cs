@@ -1,10 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
 
 namespace AnarchyInHospital
 {
@@ -20,10 +16,10 @@ namespace AnarchyInHospital
 
     class Menu
     {
-        private const string SORTBYLASTNAME = "surname";
-        private const string SORTBYAGE = "age";
-        private const string SHOWBYDISEASE = "disease";
-        private const string EXIT = "exit";
+        private const string SortLastname = "surname";
+        private const string SortAge = "age";
+        private const string ShowDisease = "disease";
+        private const string Exit = "exit";
         private Hospital _hospital;
 
         public Menu(Hospital hospital)
@@ -39,24 +35,24 @@ namespace AnarchyInHospital
             {
                 Console.Clear();
                 Console.WriteLine("Добро пожаловать!");
-                Console.WriteLine($"[{SORTBYLASTNAME}]\t- Отсортировать по фамилии");
-                Console.WriteLine($"[{SORTBYAGE}]\t\t- Отсортировать всех по возрасту");
-                Console.WriteLine($"[{SHOWBYDISEASE}]\t- Показать всех с указанным диагнозом");
-                Console.WriteLine($"[{EXIT}]\t\t- Выход");
+                Console.WriteLine($"[{SortLastname}]\t- Показать отсортированных пациентов по фамилии");
+                Console.WriteLine($"[{SortAge}]\t\t- Показать отсортированных пациентов по возрасту");
+                Console.WriteLine($"[{ShowDisease}]\t- Показать всех пациентов с указанным диагнозом");
+                Console.WriteLine($"[{Exit}]\t\t- Выход");
                 Console.Write("Введите команду: ");
 
                 switch (Console.ReadLine())
                 {
-                    case SORTBYLASTNAME:
-                        SortByLastName();
+                    case SortLastname:
+                        _hospital.SortByLastName();
                         break;
-                    case SORTBYAGE:
-                        SortByAge();
+                    case SortAge:
+                        _hospital.SortByAge();
                         break;
-                    case SHOWBYDISEASE:
-                        ShowByDisease();
+                    case ShowDisease:
+                        _hospital.ShowByDisease();
                         break;
-                    case EXIT:
+                    case Exit:
                         isWork = false;
                         Console.Clear();
                         Console.WriteLine("Досвидания!");
@@ -67,39 +63,6 @@ namespace AnarchyInHospital
                 }
 
                 Console.ReadKey();
-            }
-
-        }
-
-        private void SortByLastName()
-        {
-            var patients = _hospital.GetAllPatients();
-            patients.Sort((x, y) => string.Compare(x.Surname, y.Surname));
-            ShowPatients(patients);
-        }
-
-        private void SortByAge()
-        {
-            var patients = _hospital.GetAllPatients();
-            patients.Sort(delegate (Patient x, Patient y) { return x.Age.CompareTo(y.Age); });
-            ShowPatients(patients);
-        }
-
-        private void ShowByDisease()
-        {
-            var patients = _hospital.GetAllPatients();
-
-            Console.Write("Введите название болезни: ");
-            string userInput = Console.ReadLine();
-            var filteredPatients = patients.Where(patient => patient.Disease.ToLower() == userInput.ToLower());
-            ShowPatients(filteredPatients.ToList());
-        }
-
-        private void ShowPatients(List<Patient> patients)
-        {
-            foreach (var patient in patients)
-            {
-                patient.ShowInfo();
             }
         }
     }
@@ -113,21 +76,24 @@ namespace AnarchyInHospital
         {
             CreateRandomPatients();
         }
-
-        public void ShowPatientByDisease(string desease)
+        public void SortByLastName()
         {
-            foreach (var patient in _patients)
-            {
-                if (patient.Disease.ToLower() == desease.ToLower())
-                {
-                    patient.ShowInfo();
-                }
-            }
+            _patients.Sort((x, y) => string.Compare(x.Surname, y.Surname));
+            ShowPatients(_patients);
         }
 
-        public List<Patient> GetAllPatients()
+        public void SortByAge()
         {
-            return _patients;
+            _patients.Sort(delegate (Patient x, Patient y) { return x.Age.CompareTo(y.Age); });
+            ShowPatients(_patients);
+        }
+
+        public void ShowByDisease()
+        {
+            Console.Write("Введите название болезни: ");
+            string userInput = Console.ReadLine();
+            var filteredPatients = _patients.Where(patient => patient.Disease.ToLower() == userInput.ToLower());
+            ShowPatients(filteredPatients.ToList());
         }
 
         private void CreateRandomPatients()
@@ -141,6 +107,14 @@ namespace AnarchyInHospital
                 _patients.Add(new Patient());
             }
         }
+
+        private void ShowPatients(List<Patient> patients)
+        {
+            foreach (var patient in patients)
+            {
+                patient.ShowInfo();
+            }
+        }
     }
 
     class Patient
@@ -149,7 +123,7 @@ namespace AnarchyInHospital
         private static string[] _disease = { "Астма", "Диабет", "Аденоиды", "Крапивница" };
         private static string[] _names = { "Андрей", "Максим", "Владислав", "Денис", "Даниил", "Игорь" };
         private static string[] _surnames = { "Иванов", "Смирнов", "Кузнецов", "Попов", "Васильев", "Петров" };
-        private static string[] _fatherNames = { "Андреевич", "Петрович", "Сергеевич", "Агапович", "Вонифатович", "Дмитриевич" };
+        private static string[] _fathernames = { "Андреевич", "Петрович", "Сергеевич", "Агапович", "Вонифатович", "Дмитриевич" };
 
         public string Name { get; private set; }
 
@@ -166,7 +140,7 @@ namespace AnarchyInHospital
             Name = _names[_random.Next(_names.Length)];
             Age = _random.Next(10, 70);
             Surname = _surnames[_random.Next(_surnames.Length)];
-            Fathername = _fatherNames[_random.Next(_fatherNames.Length)];
+            Fathername = _fathernames[_random.Next(_fathernames.Length)];
             Disease = _disease[_random.Next(_disease.Length)];
         }
 

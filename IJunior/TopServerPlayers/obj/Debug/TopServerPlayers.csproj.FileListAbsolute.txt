@@ -1,0 +1,8 @@
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\TopServerPlayers\bin\Debug\TopServerPlayers.exe.config
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\TopServerPlayers\bin\Debug\TopServerPlayers.exe
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\TopServerPlayers\bin\Debug\TopServerPlayers.pdb
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\TopServerPlayers\obj\Debug\TopServerPlayers.csproj.AssemblyReference.cache
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\TopServerPlayers\obj\Debug\TopServerPlayers.csproj.SuggestedBindingRedirects.cache
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\TopServerPlayers\obj\Debug\TopServerPlayers.csproj.CoreCompileInputs.cache
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\TopServerPlayers\obj\Debug\TopServerPlayers.exe
+C:\Users\fsoci\source\repos\Eliot9700\IJunior\IJunior\TopServerPlayers\obj\Debug\TopServerPlayers.pdb
